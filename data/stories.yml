@@ -1,0 +1,46 @@
+version: "3.0"
+
+stories:
+  - story: happy path
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_great
+      - action: utter_happy
+
+  - story: sad path 1
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_unhappy
+      - action: utter_cheer_up
+      - action: utter_did_that_help
+      - intent: affirm
+      - action: utter_happy
+
+  - story: sad path 2
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_unhappy
+      - action: utter_cheer_up
+      - action: utter_did_that_help
+      - intent: deny
+      - action: utter_goodbye
+
+  - story: xmas path
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_xmas
+      - action: utter_xmas
+
+  - story: Activate form
+    steps:
+      - intent: request_christmas
+      - action: utter_ask_christmas_form
+      - action: christmas_form
+      - active_loop: christmas_form
+      - intent: christmas_list
+      - action: utter_submit
+      - action: utter_slots_values

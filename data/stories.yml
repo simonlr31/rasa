@@ -28,6 +28,7 @@ stories:
       - intent: deny
       - action: utter_goodbye
 
+  #xmas path
   - story: xmas path
     steps:
       - intent: greet
@@ -35,6 +36,7 @@ stories:
       - intent: mood_xmas
       - action: utter_xmas
 
+  #xmas form path
   - story: Activate form
     steps:
       - intent: request_christmas
@@ -44,3 +46,11 @@ stories:
       - intent: christmas_list
       - action: utter_submit
       - action: utter_slots_values
+
+  #API path
+  - story: Happy Artist
+    steps:
+      - intent: music_API
+      - action: utter_artist
+      - intent: artist_name
+      - action: action_music_API

@@ -13,6 +13,11 @@ intents:
   - stop
   - chitchat
   - christmas_list
+  - music_API
+  - artist_name
+
+actions:
+  - action_music_API
 
 responses:
   utter_greet:
@@ -34,22 +39,36 @@ responses:
   utter_iamabot:
     - text: "I am a bot, powered by Rasa."
 
+  #answer for xmas path
   utter_xmas:
     - text: "Let's listen to Mariah Carey together !"
       image: "https://www.youtube.com/watch?v=yXQViqx6GMY"
 
+  #answer chitchat
   utter_chitchat:
     - text: "It is great to talk to you"
 
+  #answer when form is submitted
   utter_submit:
     - text: "Great ! I'm giving your list to Mariah Carey"
 
+  #when slots are complited
   utter_slots_values:
     - text: "perfect"
 
+  #To ask for the wishlist
   utter_ask_christmas_form:
     - text: "Tell me your wishlist"
 
+  #to launch a research in API
+  utter_artist:
+    - text: "About which artist do you want to know more about ?"
+
+  #to give the answer to the user
+  utter_info:
+    - text: "Here is some information about {artist} : \n{biography}"
+
+#FORM
 entities:
   - gifts_list
 slots:

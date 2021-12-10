@@ -11,6 +11,7 @@ rules:
       - intent: bot_challenge
       - action: utter_iamabot
 
+  #rules for xmas form
   - rule: Submit form
     condition:
       # Condition that form is active.

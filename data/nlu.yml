@@ -90,6 +90,7 @@ nlu:
       - am I talking to a bot?
       - am I talking to a human?
 
+  #Intent mood_xmas -> words that will initiate the xmas path
   - intent: mood_xmas
     examples: |
       - It is christmas
@@ -103,6 +104,7 @@ nlu:
       - winter
       - snow
 
+  #Intent chitchat for the unhappy xmas path
   - intent: chitchat
     examples: |
       - feeling great
@@ -110,6 +112,7 @@ nlu:
       - good talk
       - what are you doing ?
 
+  #intent request_christmas to initiate xmas form
   - intent: request_christmas
     examples: |
       - whould you like to see my christmas list ?
@@ -119,11 +122,13 @@ nlu:
       - gift
       - chritmas gifts
 
+  #to stop xmas form
   - intent: stop
     examples: |
       - stop
       - done
 
+  #what can be said to be consider as a xmas list
   - intent: christmas_list
     examples: |
       - book
@@ -131,3 +136,35 @@ nlu:
       - gift
       - perfume
       - phone
+      - playstation
+      - switch
+      - bike
+
+  #to initiate music API
+  - intent: music_API
+    examples: |
+      - I want to know more
+      - tell me about
+      - artist
+      - music
+      - who is
+      - biography
+      - tell me
+      - teach me
+
+  #list of a few artists in the API
+  - intent: artist_name
+    examples: |
+      - Mariah Carey
+      - Beyonce
+      - Katy Perry
+      - Ariana Grande
+      - Rihanna
+      - Coldplay
+      - Nicki Minaj
+      - Ed Sheran
+      - Bruno Mars
+      - Cardi B
+      - Green Day
+      - Aqua
+      - Adele

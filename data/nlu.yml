@@ -115,7 +115,7 @@ nlu:
   #intent request_christmas to initiate xmas form
   - intent: request_christmas
     examples: |
-      - whould you like to see my christmas list ?
+      - would you like to see my christmas list ?
       - christmas list
       - let's go shoping together
       - shopping
@@ -151,6 +151,7 @@ nlu:
       - biography
       - tell me
       - teach me
+      - tell me more
 
   #list of a few artists in the API
   - intent: artist_name
